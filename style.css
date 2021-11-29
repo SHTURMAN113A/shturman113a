@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  position: fixed;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+}
+
+.line {
+  position: relative;
+  width: inherit;
+  height: 3px;
+  background-color: black;
+  transition: .3s all ease;
+}
+
+.line::after {
+  top: 400%;
+  position: absolute;
+  content: "";
+  height: inherit;
+  width: inherit;
+  background-color: black;
+  transition: .3s all ease;
+}
+
+.active {
+  transform: rotate(-45deg);
+  transition: .3s all ease;
+}
+
+.active::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  bottom: 0;
+  top: 0;
+  width: 0;
+  opacity: 0;
+  transition: .3s all ease;
+}
+
+main {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  background-image: url('polikek.png');
+  background-repeat: none;
+  background-size: contain;
+}
+
+.mainIcon {
+  margin: auto;
+  width: 200px;
+}
+
+.block1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.898);
+  margin-top: 6%;
+  padding-top: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  border-radius: 5%;
+}
+
+.block1 input {
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+.block1 a {
+  margin-bottom: 8%;
+  border: 2px black solid;
+  padding: 10px 8px;
+  opacity: .8;
+}
+
+.block1 a:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
+
+.logoIcon {
+  height: 50%;
+}
+
+.image {
+  width: 75px;
+}
+
+.menuBlock {
+  text-decoration: none;
+  margin: 5% 6%;
+  cursor: pointer;
+  transition: .2s all ease;
+}
+
+.menuBlock:hover {
+  opacity: .8;
+}
+
+.menuActive {
+  width: auto;
+  opacity: 1;
+}
+
+.menuButton2 {
+  display: block;
+}
+
+.--nonactive {
+  display: none;
+}

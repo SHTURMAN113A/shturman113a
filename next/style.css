@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  margin: 1%;
+  padding: 1% 8%;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  border: 1px solid;
+  transition: .2s all ease;
+}
+
+.button:hover {
+  opacity: .8;
+}
+
+.--nonactive {
+  display: none;
+}
